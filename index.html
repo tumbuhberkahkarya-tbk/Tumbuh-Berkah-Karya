@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Tumbuh Berkah Karya - Manufaktur & Supply Chain</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',    /* Slate 900 - Biru Dongker Korporat */
+                            steel: '#64748b',   /* Slate 500 - Abu-abu Baja */
+                            accent: '#f59e0b',  /* Amber 500 - Kuning Emas / Oranye CTA */
+                            accentHover: '#d97706', /* Amber 600 */
+                            light: '#f8fafc'    /* Slate 50 - Background Terang */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Utility untuk Hero Overlay */
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-navy antialiased bg-brand-light">
+
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-cubes text-brand-accent text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-brand-navy uppercase">PT Tumbuh Berkah Karya</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-brand-steel hover:text-brand-accent font-medium transition-colors">Beranda</a>
+                    <a href="#tentang-kami" class="text-brand-steel hover:text-brand-accent font-medium transition-colors">Tentang Kami</a>
+                    <a href="#layanan" class="text-brand-steel hover:text-brand-accent font-medium transition-colors">Layanan</a>
+                    <a href="#keunggulan" class="text-brand-steel hover:text-brand-accent font-medium transition-colors">Keunggulan</a>
+                </nav>
+
+                <div class="hidden md:flex items-center">
+                    <a href="#kontak" class="bg-brand-accent hover:bg-brand-accentHover text-white px-6 py-2.5 rounded-md font-semibold transition-all duration-300 transform hover:-translate-y-0.5 shadow-md hover:shadow-lg">
+                        Hubungi Kami
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="text-brand-navy hover:text-brand-accent focus:outline-none text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="beranda" class="relative pt-20 pb-32 flex items-center min-h-[90vh]" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-16">
+            <div class="max-w-3xl">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-accent/20 text-brand-accent border border-brand-accent/50 text-sm font-semibold mb-6 tracking-wider uppercase">
+                    Mitra Industri Terpercaya
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Sinergi Produksi dan Rantai Pasok yang Bisa Anda Andalkan.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+                    PT Tumbuh Berkah Karya hadir sebagai mitra strategis Anda untuk efisiensi bisnis. Dari lini manufaktur berstandar tinggi hingga manajemen distribusi yang presisi, kami memastikan produk Anda tiba di pasar dengan kualitas terbaik dan waktu yang tepat.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#kontak" class="bg-brand-accent hover:bg-brand-accentHover text-white text-center px-8 py-4 rounded-md font-bold transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-calendar-check"></i> Jadwalkan Konsultasi
+                    </a>
+                    <a href="#" class="bg-transparent hover:bg-white/10 text-white text-center border-2 border-white px-8 py-4 rounded-md font-bold transition-all duration-300 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-download"></i> Unduh Company Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang-kami" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1565891741441-64926e441838?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tentang Kami - Manufaktur" class="rounded-lg shadow-2xl z-10 relative">
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-brand-accent rounded-lg -z-10"></div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-1 bg-brand-accent"></div>
+                        <h3 class="text-brand-steel font-bold uppercase tracking-widest text-sm">Tentang Kami</h3>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-navy mb-6 leading-tight">
+                        Efisiensi di Setiap Titik, Kualitas di Setiap Produk.
+                    </h2>
+                    <p class="text-brand-steel text-lg leading-relaxed mb-6">
+                        Di tengah dinamika industri yang bergerak cepat, Anda membutuhkan lebih dari sekadar vendor; Anda membutuhkan mitra. 
+                    </p>
+                    <p class="text-brand-steel text-lg leading-relaxed">
+                        PT Tumbuh Berkah Karya mengintegrasikan proses manufaktur yang tangguh dengan jaringan supply chain yang mulus. Kami mengambil alih kerumitan operasional, sehingga Anda dapat berfokus penuh pada pertumbuhan bisnis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-1 bg-brand-accent"></div>
+                    <h3 class="text-brand-steel font-bold uppercase tracking-widest text-sm">Layanan Kami</h3>
+                    <div class="w-8 h-1 bg-brand-accent"></div>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-navy">Solusi Terintegrasi dari Hulu ke Hilir</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-brand-navy/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 transition-colors">
+                        <i class="fa-solid fa-industry text-3xl text-brand-navy group-hover:text-brand-accent transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Manufaktur Terstandarisasi</h3>
+                    <p class="text-brand-steel leading-relaxed">
+                        Fasilitas produksi kami dirancang untuk skalabilitas dan konsistensi. Melalui proses Quality Control yang ketat, kami menjamin setiap unit yang diproduksi memenuhi standar spesifikasi terbaik.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-brand-navy/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 transition-colors">
+                        <i class="fa-solid fa-warehouse text-3xl text-brand-navy group-hover:text-brand-accent transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Manajemen Gudang & Penyimpanan</h3>
+                    <p class="text-brand-steel leading-relaxed">
+                        Sistem manajemen inventaris yang akurat untuk menjaga keamanan dan kualitas produk Anda sebelum didistribusikan. Ruang penyimpanan yang optimal untuk efisiensi biaya.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-brand-navy/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 transition-colors">
+                        <i class="fa-solid fa-truck-fast text-3xl text-brand-navy group-hover:text-brand-accent transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Distribusi & Rantai Pasok</h3>
+                    <p class="text-brand-steel leading-relaxed">
+                        Jaringan armada dan logistik yang terukur. Kami memastikan alur pengiriman yang efektif, tepat waktu, dan aman hingga ke tangan klien atau titik penjualan akhir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keunggulan" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-navy mb-8 leading-tight">
+                        Keunggulan Bersama PT Tumbuh Berkah Karya
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-brand-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-navy mb-1">Kecepatan dan Ketepatan (On-Time Delivery)</h4>
+                                <p class="text-brand-steel">Meminimalisir waktu jeda (downtime) dalam rantai pasok Anda.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-brand-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-navy mb-1">Kapasitas Terukur</h4>
+                                <p class="text-brand-steel">Fleksibilitas produksi dan distribusi yang dapat disesuaikan dengan skala permintaan bisnis Anda.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-brand-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-navy mb-1">Transparansi Proses</h4>
+                                <p class="text-brand-steel">Komunikasi yang proaktif dan kejelasan informasi di setiap tahapan, dari bahan baku hingga pengiriman.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-brand-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-navy mb-1">Komitmen Kualitas</h4>
+                                <p class="text-brand-steel">Dedikasi penuh terhadap standar mutu demi menjaga reputasi brand Anda di mata konsumen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c50a63?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Logistics and Supply Chain" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-navy relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#f59e0b 2px, transparent 2px); background-size: 30px 30px;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-gray-700">
+                <div class="pt-6 md:pt-0">
+                    <div class="text-5xl md:text-6xl font-extrabold text-brand-accent mb-2">50.000+</div>
+                    <div class="text-white font-medium tracking-wide uppercase">Kapasitas Produksi Bulanan</div>
+                </div>
+                <div class="pt-6 md:pt-0">
+                    <div class="text-5xl md:text-6xl font-extrabold text-brand-accent mb-2">120+</div>
+                    <div class="text-white font-medium tracking-wide uppercase">Titik Jangkauan Distribusi</div>
+                </div>
+                <div class="pt-6 md:pt-0">
+                    <div class="text-5xl md:text-6xl font-extrabold text-brand-accent mb-2">99%</div>
+                    <div class="text-white font-medium tracking-wide uppercase">Pengiriman Tepat Waktu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-gray-900 pt-24 pb-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Siap Mengoptimalkan Lini Produksi dan Distribusi Anda?
+            </h2>
+            <p class="text-gray-400 text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto">
+                Mari berdiskusi tentang bagaimana PT Tumbuh Berkah Karya dapat merancang solusi manufaktur dan logistik yang paling efisien untuk kebutuhan spesifik perusahaan Anda.
+            </p>
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-brand-accent/30">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Hubungi Tim Sales Kami & Chat via WhatsApp
+            </a>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-cubes text-brand-accent text-xl"></i>
+                <span class="font-bold text-lg tracking-tight text-white uppercase">PT Tumbuh Berkah Karya</span>
+            </div>
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 PT Tumbuh Berkah Karya. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
