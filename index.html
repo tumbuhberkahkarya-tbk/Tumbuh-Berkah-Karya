@@ -41,9 +41,9 @@
         }
     </style>
 </head>
-<body class="font-sans text-brand-navy antialiased bg-brand-light">
+<body class="font-sans text-brand-navy antialiased bg-brand-light selection:bg-brand-accent selection:text-white">
 
-    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
@@ -59,7 +59,7 @@
                 </nav>
 
                 <div class="hidden md:flex items-center">
-                    <a href="#kontak" class="bg-brand-accent hover:bg-brand-accentHover text-white px-6 py-2.5 rounded-md font-semibold transition-all duration-300 transform hover:-translate-y-0.5 shadow-md hover:shadow-lg">
+                    <a href="#kontak" class="bg-brand-accent hover:bg-brand-accentHover text-white px-7 py-2.5 rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-0.5 shadow-md hover:shadow-xl hover:shadow-brand-accent/30">
                         Hubungi Kami
                     </a>
                 </div>
@@ -73,24 +73,24 @@
         </div>
     </header>
 
-    <section id="beranda" class="relative pt-20 pb-32 flex items-center min-h-[90vh]" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0 hero-overlay"></div>
+    <section id="beranda" class="relative pt-20 pb-32 flex items-center min-h-[90vh]" style="background-image: url('assets/gudang-1.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/80 to-brand-navy/30"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-16">
             <div class="max-w-3xl">
-                <span class="inline-block py-1 px-3 rounded-full bg-brand-accent/20 text-brand-accent border border-brand-accent/50 text-sm font-semibold mb-6 tracking-wider uppercase">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-brand-accent/20 text-brand-accent border border-brand-accent/30 text-xs font-bold mb-6 tracking-widest uppercase backdrop-blur-sm">
                     Mitra Industri Terpercaya
                 </span>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-                    Sinergi Produksi dan Rantai Pasok yang Bisa Anda Andalkan.
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+                    Sinergi Produksi & Rantai Pasok <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-200">Bisa Diandalkan.</span>
                 </h1>
-                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light max-w-2xl">
                     PT Tumbuh Berkah Karya hadir sebagai mitra strategis Anda untuk efisiensi bisnis. Dari lini manufaktur berstandar tinggi hingga manajemen distribusi yang presisi, kami memastikan produk Anda tiba di pasar dengan kualitas terbaik dan waktu yang tepat.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#kontak" class="bg-brand-accent hover:bg-brand-accentHover text-white text-center px-8 py-4 rounded-md font-bold transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2">
+                    <a href="#kontak" class="bg-brand-accent hover:bg-brand-accentHover text-white text-center px-8 py-4 rounded-full font-bold transition-all duration-300 transform hover:-translate-y-1 shadow-xl hover:shadow-brand-accent/40 flex items-center justify-center gap-3">
                         <i class="fa-regular fa-calendar-check"></i> Jadwalkan Konsultasi
                     </a>
-                    <a href="#" class="bg-transparent hover:bg-white/10 text-white text-center border-2 border-white px-8 py-4 rounded-md font-bold transition-all duration-300 flex items-center justify-center gap-2">
+                    <a href="#" class="bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white text-center border border-white/20 px-8 py-4 rounded-full font-bold transition-all duration-300 flex items-center justify-center gap-3">
                         <i class="fa-solid fa-download"></i> Unduh Company Profile
                     </a>
                 </div>
@@ -98,12 +98,23 @@
         </div>
     </section>
 
-    <section id="tentang-kami" class="py-24 bg-white">
+    <section id="tentang-kami" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1565891741441-64926e441838?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tentang Kami - Manufaktur" class="rounded-lg shadow-2xl z-10 relative">
-                    <div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-brand-accent rounded-lg -z-10"></div>
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-brand-accent to-brand-navy rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <img src="assets/gudang-2.jpg" alt="Tentang Kami - Manufaktur" class="rounded-2xl shadow-2xl z-10 relative object-cover h-[500px] w-full transform transition duration-500 group-hover:scale-[1.01]">
+                    <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl z-20 border border-gray-100 hidden md:block">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-brand-accent/10 rounded-full flex items-center justify-center text-brand-accent text-xl">
+                                <i class="fa-solid fa-medal"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-medium">Standar Kualitas</p>
+                                <p class="font-bold text-brand-navy">Terbaik & Teruji</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <div class="flex items-center gap-3 mb-4">
@@ -126,41 +137,44 @@
 
     <section id="layanan" class="py-24 bg-brand-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-20">
                 <div class="flex items-center justify-center gap-3 mb-4">
-                    <div class="w-8 h-1 bg-brand-accent"></div>
-                    <h3 class="text-brand-steel font-bold uppercase tracking-widest text-sm">Layanan Kami</h3>
-                    <div class="w-8 h-1 bg-brand-accent"></div>
+                    <div class="w-12 h-0.5 bg-brand-accent"></div>
+                    <h3 class="text-brand-accent font-bold uppercase tracking-widest text-sm">Layanan Kami</h3>
+                    <div class="w-12 h-0.5 bg-brand-accent"></div>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-brand-navy">Solusi Terintegrasi dari Hulu ke Hilir</h2>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-navy tracking-tight">Solusi Terintegrasi dari Hulu ke Hilir</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-brand-navy/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 transition-colors">
-                        <i class="fa-solid fa-industry text-3xl text-brand-navy group-hover:text-brand-accent transition-colors"></i>
+                <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-navy/5 rounded-bl-full -z-10 transition-transform duration-500 group-hover:scale-150"></div>
+                    <div class="w-16 h-16 bg-brand-navy text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:bg-brand-accent group-hover:-rotate-6 transition-all duration-300">
+                        <i class="fa-solid fa-industry text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-navy mb-4">Manufaktur Terstandarisasi</h3>
+                    <h3 class="text-2xl font-bold text-brand-navy mb-4">Manufaktur Terstandarisasi</h3>
                     <p class="text-brand-steel leading-relaxed">
                         Fasilitas produksi kami dirancang untuk skalabilitas dan konsistensi. Melalui proses Quality Control yang ketat, kami menjamin setiap unit yang diproduksi memenuhi standar spesifikasi terbaik.
                     </p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-brand-navy/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 transition-colors">
-                        <i class="fa-solid fa-warehouse text-3xl text-brand-navy group-hover:text-brand-accent transition-colors"></i>
+                <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-navy/5 rounded-bl-full -z-10 transition-transform duration-500 group-hover:scale-150"></div>
+                    <div class="w-16 h-16 bg-brand-navy text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:bg-brand-accent group-hover:-rotate-6 transition-all duration-300">
+                        <i class="fa-solid fa-warehouse text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-navy mb-4">Manajemen Gudang & Penyimpanan</h3>
+                    <h3 class="text-2xl font-bold text-brand-navy mb-4">Manajemen Gudang & Penyimpanan</h3>
                     <p class="text-brand-steel leading-relaxed">
                         Sistem manajemen inventaris yang akurat untuk menjaga keamanan dan kualitas produk Anda sebelum didistribusikan. Ruang penyimpanan yang optimal untuk efisiensi biaya.
                     </p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-brand-navy/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 transition-colors">
-                        <i class="fa-solid fa-truck-fast text-3xl text-brand-navy group-hover:text-brand-accent transition-colors"></i>
+                <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-navy/5 rounded-bl-full -z-10 transition-transform duration-500 group-hover:scale-150"></div>
+                    <div class="w-16 h-16 bg-brand-navy text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:bg-brand-accent group-hover:-rotate-6 transition-all duration-300">
+                        <i class="fa-solid fa-truck-fast text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-navy mb-4">Distribusi & Rantai Pasok</h3>
+                    <h3 class="text-2xl font-bold text-brand-navy mb-4">Distribusi & Rantai Pasok</h3>
                     <p class="text-brand-steel leading-relaxed">
                         Jaringan armada dan logistik yang terukur. Kami memastikan alur pengiriman yang efektif, tepat waktu, dan aman hingga ke tangan klien atau titik penjualan akhir.
                     </p>
@@ -215,8 +229,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c50a63?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Logistics and Supply Chain" class="rounded-lg shadow-xl">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-brand-navy to-brand-accent rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <img src="assets/gudang-1.jpg" alt="Logistics and Supply Chain" class="rounded-2xl shadow-2xl relative object-cover h-[600px] w-full transform transition duration-500 group-hover:scale-[1.01]">
                 </div>
             </div>
         </div>
@@ -251,7 +266,7 @@
             <p class="text-gray-400 text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto">
                 Mari berdiskusi tentang bagaimana PT Tumbuh Berkah Karya dapat merancang solusi manufaktur dan logistik yang paling efisien untuk kebutuhan spesifik perusahaan Anda.
             </p>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-md font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-brand-accent/30">
+            <a href="https://wa.me/6285813440469" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-brand-accent/30">
                 <i class="fa-brands fa-whatsapp text-2xl"></i>
                 Hubungi Tim Sales Kami & Chat via WhatsApp
             </a>
